@@ -8,10 +8,20 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { MaterialModule } from 'src/material.module';
 import { ToastrModule } from 'ngx-toastr';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { HomeComponent } from './home/home.component';
+import { UserlistingComponent } from './userlisting/userlisting.component';
+import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    RegisterComponent,
+    HomeComponent,
+    UserlistingComponent,
+    UpdatepopupComponent
   ],
   imports: [
     BrowserModule,
