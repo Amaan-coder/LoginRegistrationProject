@@ -16,9 +16,7 @@ export class LoginComponent {
   passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{8,}$/;
   userdata: any;
   constructor(private builder: FormBuilder, private common: CommonService, private toastr: ToastrService, private route: Router) {
-    sessionStorage.clear(
-  
-    )
+    sessionStorage.clear()
    }
 
   loginForm = this.builder.group({
